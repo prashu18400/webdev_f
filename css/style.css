@@ -1,0 +1,180 @@
+.navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
+  }
+  .navbar-brand{
+    color:#ff00b6;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px; 
+    font-style: normal; 
+    font-variant: normal;
+    font-weight: 400; 
+    line-height: 26.4px;
+  }
+  .navbar-brand:hover{
+    color:orangered;
+  }
+  .navbar-nav> li a{
+    font-family: "Anton", sans-serif;
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal;
+    font-weight: 400; 
+    line-height: 26.4px; 
+    color:white;
+  }
+  #dm a{
+    font-family: sans-serif;
+    font-size: medium;
+    color:none;
+  }
+  #dm a:hover{
+    color:none;
+  }
+  .navbar-nav> li a:hover{
+    color:orangered;
+  }
+  .body-head{
+  font-family: "Monoton", cursive;
+    font-size: 122px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1;
+  }
+  .date{
+    color:orangered;
+    font-weight:900;
+    margin-top:240px;
+  }
+  .carousel-caption{
+    position: absolute;
+    bottom:100px;
+    }
+    .carousel-item img{
+      height:450px;
+      width:100%;
+      opacity:0.4;
+    }
+    .arijit{
+      float:right;
+    }
+    .jubin{
+      float:left;
+    }
+    #con{
+      overflow:hidden;
+    }
+    #nm1{
+      padding-top: 15px;
+      text-indent: 410px;
+    }
+    #nm2{
+      padding-top:15px;
+    }
+    .bu{
+      padding:8px 20px 8px 20px;
+      border-radius: 30px;
+      border-style: solid;
+      border-color: #ff00b6;
+      background-color:black;
+      color: #ff00b6;
+      text-align: center;
+      margin: 30px;
+      
+  }
+  .bu:hover{
+    background-color:peru;
+    color:white;
+  }
+  #bt{
+    font-weight:larger;font-size:50px;color:antiquewhite
+  }
+  #btn_c{
+    margin-left: 10px;
+  }
+  #fd{
+    font-size:larger;
+  }
+  @media (max-width:920px){
+    .body-head{
+      font-family: "Monoton", cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.2;
+    margin:20px 0px;
+    }
+    .navbar-nav> li a{
+      font-size:14px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      line-height: 10px;
+      padding-left:0px;
+  }
+  .date{
+    margin-top:100px;
+    font-weight: 400;
+  }
+  .carousel-item img{
+    height:250px;
+    width:100%;
+    opacity:0.4;
+  }
+  .carousel-caption{
+    position: absolute;
+    bottom:20px;
+    }
+  .carousel-caption h3{
+    font-size:30px;
+  }
+  .arijit{
+    float:none;
+  }
+  .jubin{
+    float:none;
+  }
+  #nm1{
+    padding-left: 0px;
+    padding-top: 0px;
+    text-indent:0px;
+    text-align: center;
+  }
+  .center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width:50%; */
+  }
+  #nm2{
+    padding-left: 0px;
+    padding-top: 0px;
+    text-indent:0px;
+    text-align: center;
+  }
+  #one{
+    display: none;
+  }
+  #bt{
+    font-size: medium;
+  }
+  #bth{
+    display: none;
+  }
+  #btn_c{
+    margin-top:10px;
+    margin-left:0px;
+  }
+ #fd{
+   font-size:small;
+   font-weight: bolder;
+   color:white;
+ }
+ .h3_1{
+   font-size:medium;
+ }
+ .h4_1{
+   font-size:medium;
+ }
+
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>about</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Monoton" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
+  <style>
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 2px rgb(233, 176, 20);
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+    }
+
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+
+    }
+
+    .flip-card-back {
+      background-color: black;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .cards1 {
+      display: none;
+    }
+
+    @media(max-width:767px) {
+      .cards1 {
+        display: block;
+      }
+
+      .row {
+        display: none;
+      }
+
+      .flip-card {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-alert">
+    <a href="alog.html" class="navbar-brand"><i>EventsNow</i></a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#menu"><i style="color:white"
+        class="fa fa-bars"></i></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mr-auto pl-4">
+        <li><a href="alog.html" class="nav-link">HOME</a></li>
+        <li><a href="#performers" class="nav-link">PERFORMERS</a></li>
+        <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            About
+          </a>
+          <div class="dropdown-menu" id="dm">
+            <a class="dropdown-item" href="about.html">About us</a>
+            <a class="dropdown-item" href="venue.html">Venues</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto pl-4">
+        <li><a href="buytickets.html" class="nav-link">Buy Tickets</a></li>
+        <li><a href="index.html" class="nav-link">LOGOUT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container" style="padding-top: 80px;">
+    <div class="row">
+      <div class="col-lg-4 col-12">
+        <div class="flip-card text-center" style="margin-bottom:20px">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="border-radius: 10px;">
+              <img src="images/charminar.jpg" style="width:300px;height:300px;border-radius: 10px;">
+            </div>
+            <div class="flip-card-back">
+              <h4
+                style="color: orangered;padding-top:20px;margin-left: 10px;padding-bottom: 10px;text-align: center;font-family: 'Times New Roman', Times, serif">
+                <i>Hyderabad</i></h4>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Venue</span> : HITECH City</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Date</span> : December 6th, 2020</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Timings</span> : 6PM-10PM</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Ticket cost per person</span> : 1000/-</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="flip-card" style="margin-bottom:20px;margin-left:375px">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="border-radius: 10px;">
+              <img src="images/gateway.jpg" style="width:300px;height:300px;border-radius: 10px;">
+            </div>
+            <div class="flip-card-back">
+              <h4
+                style="color: orangered;padding-top:20px;margin-left: 10px;padding-bottom: 10px;text-align: center;font-family: 'Times New Roman', Times, serif">
+                <i>Mumbai</i></h4>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Venue</span> : MMRDA Grounds</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Date</span> : December 10th, 2020</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Timings</span> : 6PM-10PM</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Ticket cost per person</span> : 1000/-</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="flip-card text-center" style="margin-bottom:20px">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="border-radius: 10px;">
+              <img src="images/indiagate.jpg" style="width:300px;height:300px;border-radius: 10px;">
+            </div>
+            <div class="flip-card-back">
+              <h4
+                style="color: orangered;padding-top:20px;margin-left: 10px;padding-bottom: 10px;text-align: center;font-family: 'Times New Roman', Times, serif">
+                <i>Delhi</i></h4>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Venue</span> : Concert Ground, DTU</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Date</span> : December 15th, 2020</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Timings</span> : 6PM-10PM</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Ticket cost per person</span> : 1000/-</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div class="flip-card text-center" style="margin-bottom:50px">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="border-radius: 10px;">
+              <img src="images/temple.jpg" style="width:300px;height:300px;border-radius: 10px;">
+            </div>
+            <div class="flip-card-back">
+              <h4
+                style="color: orangered;padding-top:20px;margin-left: 10px;padding-bottom: 10px;text-align: center;font-family: 'Times New Roman', Times, serif">
+                <i>Chennai</i></h4>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Venue</span> : Jawaharlal Nehru Stadium</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Date</span> : December 20th, 2020</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Timings</span> : 6PM-10PM</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Ticket cost per person</span> : 1000/-</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="flip-card text-center" style="margin-bottom:40px;margin-left:195px;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="border-radius: 10px;">
+              <img src="images/bridge.jpg" style="width:300px;height:300px;border-radius: 10px;">
+            </div>
+            <div class="flip-card-back">
+              <h4
+                style="color: orangered;padding-top:20px;margin-left: 10px;padding-bottom: 10px;text-align: center;font-family: 'Times New Roman', Times, serif">
+                <i>Kolkata</i></h4>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Venue</span> : Netaji Indoor Stadium</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Date</span> : December 25th, 2020</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Timings</span> : 6PM-10PM</i></p>
+              <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+                <span style="color: #ff00b6;font-size: x-large;"><i>Ticket cost per person</span> : 1000/-</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="cards1">
+      <div class="flip-card text-center" style="margin-bottom:20px">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="border-radius: 10px;">
+            <img src="images/charminar.jpg" style="width:300px;height:300px;border-radius: 10px;">
+          </div>
+          <div class="flip-card-back">
+            <h4
+              style="color: orangered;padding-top:20px;margin-left: 10px;padding-bottom: 10px;text-align: center;font-family: 'Times New Roman', Times, serif">
+              <i>Hyderabad</i></h4>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Venue</span> : HITECH City</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Date</span> : December 6th, 2020</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Timings</span> : 6PM-10PM</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Ticket cost per person</span> : 1000/-</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" style="margin-bottom:20px;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="border-radius: 10px;">
+            <img src="images/gateway.jpg" style="width:300px;height:300px;border-radius: 10px;">
+          </div>
+          <div class="flip-card-back">
+            <h4
+              style="color: orangered;padding-top:20px;margin-left: 10px;padding-bottom: 10px;text-align: center;font-family: 'Times New Roman', Times, serif">
+              <i>Mumbai</i></h4>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Venue</span> : MMRDA Grounds</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Date</span> : December 10th, 2020</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Timings</span> : 6PM-10PM</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Ticket cost per person</span> : 1000/-</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card text-center" style="margin-bottom:20px">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="border-radius: 10px;">
+            <img src="images/indiagate.jpg" style="width:300px;height:300px;border-radius: 10px;">
+          </div>
+          <div class="flip-card-back">
+            <h4
+              style="color: orangered;padding-top:20px;margin-left: 10px;padding-bottom: 10px;text-align: center;font-family: 'Times New Roman', Times, serif">
+              <i>Delhi</i></h4>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Venue</span> : Concert Ground, DTU</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Date</span> : December 15th, 2020</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Timings</span> : 6PM-10PM</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Ticket cost per person</span> : 1000/-</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card text-center" style="margin-bottom:50px">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="border-radius: 10px;">
+            <img src="images/temple.jpg" style="width:300px;height:300px;border-radius: 10px;">
+          </div>
+          <div class="flip-card-back">
+            <h4
+              style="color: orangered;padding-top:20px;margin-left: 10px;padding-bottom: 10px;text-align: center;font-family: 'Times New Roman', Times, serif">
+              <i>Chennai</i></h4>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Venue</span> : Jawaharlal Nehru Stadium</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Date</span> : December 20th, 2020</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Timings</span> : 6PM-10PM</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Ticket cost per person</span> : 1000/-</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card text-center" style="margin-bottom:40px;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="border-radius: 10px;">
+            <img src="images/bridge.jpg" style="width:300px;height:300px;border-radius: 10px;">
+          </div>
+          <div class="flip-card-back">
+            <h4
+              style="color: orangered;padding-top:20px;margin-left: 10px;padding-bottom: 10px;text-align: center;font-family: 'Times New Roman', Times, serif">
+              <i>Kolkata</i></h4>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Venue</span> : Netaji Indoor Stadium</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Date</span> : December 25th, 2020</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Timings</span> : 6PM-10PM</i></p>
+            <p style="color:white;margin-left: 8px;font-size: large;font-family: 'Times New Roman', Times, serif;">
+              <span style="color: #ff00b6;font-size: x-large;"><i>Ticket cost per person</span> : 1000/-</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

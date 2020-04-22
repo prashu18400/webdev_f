@@ -1,0 +1,75 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <title>Concert</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap-solar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Monoton" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
+    <script>
+        function Validate() {
+            var pcm = $("#pcm").val();
+            var pem = $("#pem").val();
+            if (pcm != '' && pem != '') {
+                return true;
+                alert("Successfully Submitted your query")
+            }
+            else {
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body style="background-color: black;">
+
+    <div id="myCarousel_2" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-responsive" src="images/banner.jpg">
+                <div class="carousel-caption">
+                    <h3 class="body-head">Concert 2020</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-4" id="fd" style="text-align:center">
+        Click on the Directions icon present on the Map to see our Company location
+    </div>
+    <center><iframe id="ij" class="image-responsive"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15225.712911753526!2d78.43586562499952!3d17.43920628024499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90c55bb43183%3A0x1abc135b23ee2703!2sAmeerpet%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1587525035327!5m2!1sen!2sin"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe></center>
+    <div class="container">
+        <h6>Get in Touch!</h6>
+        <form>
+            <textarea class="form-control" rows="5" required></textarea>
+        </form>
+        <form class="form-inline pt-2" action="alog.html" onsubmit="return Validate()">
+            <label for="email">Email:</label>
+            <input type="email" id="pcm" required class="form-control" id="email" placeholder="Enter email"
+                name="email">
+            <button id="btn_c" id="pem" class="btn btn-primary" type="submit">Send</button>
+
+
+        </form>
+    </div>
+    <div>
+        <ul style="list-style-type: none;font-size:larger;font-weight:900" class="float-left pt-3">
+            <li>Contact-No: 8106125760</li>
+            <li>mailus:prashanth18400@gmail.com</li>
+        </ul>
+    </div>
+</body>
+
+</html>

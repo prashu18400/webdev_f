@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Concert</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap-solar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Monoton" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
+    <script>
+
+        function myfunction() {
+            var name = $('#name').val();
+            var t = $('#num').val();
+            var t1 = $('#ba').val();
+            var m = $('#mn').val();
+            if (name != '' && t1 != '' && m.length == 10) {
+                if (t > 4) {
+                    alert("You can book only 4 tickets at a time");
+                    return false;
+                }
+                else if (t == 4) {
+                    var Price = t * 800;
+                    alert("You have Successsfully booked" + ' ' + t + " passes , You can come and collect your passes at the Venue mentioned 2 days prior the event.Make sure you carry a amount of " + Price + '/-');
+                    return true;
+                }
+                else {
+                    var Price = t * 1000;
+                    alert("You have Successsfully booked" + ' ' + t + " passes , You can come and collect your passes at the Venue mentioned 2 days prior the event.Make sure you carry a amount of " + Price + '/-');
+                    return true;
+                }
+            }
+            else if (m.length != 10) {
+                alert("Please enter a valid mobile number");
+                return false;
+            }
+            else {
+                alert("Please Fill all the details");
+                return false;
+            }
+        }
+
+    </script>
+</head>
+
+<body class="container" style="background-color: black;margin-top:120px">
+
+    <div class="row">
+        <div class="col-lg-6">
+            <p id="bt" class="text-center">Book your
+                Tickets here
+            </p>
+            <form action="alog.html" onsubmit="return myfunction()">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label>
+                            <b>Name</b>
+                        </label>
+                        <input type='text' id="name" class="form-control" placeholder='Enter your name' required>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <b>Number of Tickets</b>
+                        </label>
+                        <input type='number' id="num" min="1" max="4" class="form-control" required>
+                    </div>
+                    <small style="margin-bottom:40px">Note you can book only 4 tickets for one mobile number</small>
+                    <div class="form-group">
+                        <label><b>Mobile Number</b></label>
+                        <input type="number" class="form-control" placeholder="enter your mobile number" id="mn"
+                            required>
+                    </div>
+                    <label class="pt-2">
+                        <b>Select city</b>
+                    </label>
+                    <select id="bankaccount" id="ba" class="custom-select mb-3" required>
+                        <option value=""></option>
+                        <option value="0">Hyderabad</option>
+                        <option value="1">Mumbai</option>
+                        <option value="2">Delhi</option>
+                        <option value='3'>Chennai</option>
+                        <option value="4">Kolkata</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+            </form>
+            <marquee behavior="scroll" direction="left"><small><b><span class="fa fa-gift pr-2"
+                            style="font-size:24px"></span></b>Note
+                    if you book 4 tickets
+                    at
+                    once you will get Rs.200 off on every
+                    ticket.So what are u waiting for book tickets along with your Friends or Family and make the evening
+                    memorable in your life.</small></marquee>
+        </div>
+        <div class="col-lg-6" id="bth">
+            <p style="font-size:-webkit-xxx-large;padding-top:100px;" class="float-right">Welcome to
+                </br><span style="color:#ff00b6;"><em>EventsNow</em> </span>
+
+            </p>
+        </div>
+    </div>
+
+
+
+</body>
